@@ -9,8 +9,7 @@ const time=()=>{
         hr = 12;
     }
 
-    if(hr>12) {
-        hr -= 12;
+    if(hr>=12) {
         timesession = "PM";  
     }
 
