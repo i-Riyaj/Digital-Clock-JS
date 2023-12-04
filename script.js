@@ -5,9 +5,9 @@ const time=()=>{
     let sec = date.getSeconds();
     let timesession = "AM";
 
-    if(hr==0){
-        hr = 12;
-    }
+    let showDate = document.querySelector(".date");
+    showDate.innerHTML = date.toLocaleDateString('en-IN');
+    
 
     if(hr>=12) {
         timesession = "PM";  
